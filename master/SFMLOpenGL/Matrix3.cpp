@@ -178,7 +178,7 @@ Matrix3 Matrix3::Rotation(int _angle)
 	return answer;
 }
 
-Matrix3 Matrix3::Translate(int dx, int dy)
+Matrix3 Matrix3::Translate(float dx, float dy)
 {
 	Matrix3 answer = Matrix3();
 	answer.A11 = 1;
@@ -194,7 +194,7 @@ Matrix3 Matrix3::Translate(int dx, int dy)
 	return answer;
 }
 
-Matrix3 Matrix3::Scale(int dx, int dy)
+Matrix3 Matrix3::Scale(float dx, float dy)
 {
 	Matrix3 answer = Matrix3();
 	answer.A11 = (float)dx / 100;
@@ -226,7 +226,7 @@ Matrix3 Matrix3::operator-()
 	return answer;
 }
 
-Matrix3 Matrix3::RotationX(int _angle)
+Matrix3 Matrix3::RotationX(float _angle)
 {
 	float radians = 3.14 / 180 * _angle;
 	Matrix3 answer =  Matrix3();
@@ -243,7 +243,7 @@ Matrix3 Matrix3::RotationX(int _angle)
 	return answer;
 }
 
-Matrix3 Matrix3::RotationY(int _angle)
+Matrix3 Matrix3::RotationY(float _angle)
 {
 	float radians = 3.14 / 180 * _angle;
 	Matrix3 answer =  Matrix3();
@@ -260,7 +260,7 @@ Matrix3 Matrix3::RotationY(int _angle)
 	return answer;
 }
 
-Matrix3 Matrix3::RotationZ(int _angle)
+Matrix3 Matrix3::RotationZ(float _angle)
 {
 	
 	float radians = 3.14 / 180 * _angle;

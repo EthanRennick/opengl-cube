@@ -48,17 +48,17 @@ public:
 
 	static Matrix3 Rotation(int _angle);
 
-	static Matrix3 Translate(int dx, int dy);
+	static Matrix3 Translate(float dx, float dy);
 
-	 Matrix3 Scale(int dx, int dy);
+	static Matrix3 Scale(float dx, float dy);
 
 	 Matrix3 operator -();
 
-	 Matrix3 RotationX(int _angle);
+	static Matrix3 RotationX(float _angle);
 
-	static Matrix3 RotationY(int _angle);
+	static Matrix3 RotationY(float _angle);
 
-	 Matrix3 RotationZ(int _angle);
+	static Matrix3 RotationZ(float _angle);
 	
 	 Matrix3 Scale3D(int dx);
 
